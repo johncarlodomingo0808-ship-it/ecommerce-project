@@ -7,16 +7,30 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-            <h1>Welcome to My Web Application</h1>
-        </header>
-        <main>
-            <p>This is a simple web application built with HTML, CSS, and JavaScript.</p>
-            <button id="clickMeButton">Click Me!</button>
-        </main>
-        <footer>
-            <p>&copy; 2024 My Web Application</p>
-        </footer>
+      <div class = "login-box"> 
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon> </span>
+                <input type="text" placeholder="Username" required>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
+                <input type="password" placeholder="Password" required>
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link"> 
+                <p>Don't have an account? <a href="#">Register now</a></p>
+            </div>
+        </form>
+      </div>
+      
         <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
