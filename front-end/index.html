@@ -1,38 +1,42 @@
-<!DOCTYPE html> 
-<html lang="en"> 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bytes Baddie</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body> 
-    <section> 
-      <div class = "login-box"> 
-        <form action="">
-            <h2>Login</h2>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon> </span>
-                <input type="text" placeholder="Username" required>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon> </span>
-                <input type="password" placeholder="Password" required>
-            </div>
-             <div class="remember-forgot">
-                    <label><input type="checkbox"> Remember me</label>
-                    <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="register-link"> 
-                <p>Don't have an account? <a href="#">Register now</a></p>
-            </div>
-        </form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bytes Baddie</title>
+    <link rel="icon" type="image/jpeg" href="assets/logo.jpg" />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body class="home-page">
+    <header class="navbar">
+       <div class="brand">
+          <img src="assets/logo.jpg" alt="Bytes Baddie logo" class="brand-logo">
+          <a href="index.html"><span class="brand-text">Bytes Baddie</span></a>
       </div>
-      
-        <script src="script.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>    
-    </section>
-    </body>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">Featured</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+
+      <a href="login.html" class="login-btn">Login</a>
+    </header>
+
+    <main class="hero">
+      <div class="hero-content">
+        <p class="tag">New Collection</p>
+        <h1>Upgrade your everyday style</h1>
+        <p>
+          Fresh essentials, trendy pieces, and premium quality for modern living.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="primary-btn">Shop Now</a>
+          <a href="register.html" class="secondary-btn">Register</a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
